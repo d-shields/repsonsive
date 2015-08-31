@@ -1,14 +1,25 @@
 body {
 	background: #eee;
-	font-family: arial;
+	font-family: Verdana, Geneva, sans-serif;
 }
 #page-container {
-	max-width: 1200px;
+	max-width: 1024px;
 	background: #fff;
 	margin: 0 auto;
+	border-top: 4px solid #c88b17;
+}
+
+.align-centre {
+	text-align: center;
+	font-size: 0.7em;
+	font-family: arial;
 }
 
 #page {
+}
+
+#top-menu {
+	font-size: 0.7em;
 }
 
 #branding {
@@ -16,8 +27,8 @@ body {
 }
 
 #logo {
-	width: 40%;
-	max-width: 288px;
+	width: 50%;
+	max-width: 520px;
 }
 
 #logo img {
@@ -27,6 +38,22 @@ body {
 #top-menu .menu-wrapper {
 	float: right;
 	padding: 6px 0;
+}
+
+.menu-wrapper a {
+	text-decoration: none;
+	margin-right: 1em;
+}
+
+footer a,
+#right-sidebar a {
+	text-decoration: none;
+}
+
+footer a:hover,
+#right-sidebar a:hover,
+menu-wrapper a:hover {
+	text-decoration: underline;
 }
 
 .container {
@@ -45,6 +72,11 @@ body {
 	color: #fff;
 }
 
+#main-menu .menu-wrapper a:hover {
+	color: #c88b17;
+	text-decoration: none;
+}
+
 #main-content .column-inner {
 	padding: 0 0.5em;
 }
@@ -54,15 +86,19 @@ body {
 }
 
 #right-sidebar {
-	width: 33.3%;
-	background: #888;
-	color: #fff;
-	margin-bottom: 1em;
+	width: 33.3%
 }
 
-#right-sidebar a,
-footer a {
-	color: #fff;
+#right-sidebar .sidebar-block {
+	width: 90%;
+	padding: 0 2%;
+	border: 1px solid #c88b17;
+	margin-bottom: 1em;
+	border-radius: 10px;
+}
+
+#right-sidebar .sidebar-block a {
+	color: #003619
 }
 
 #main-column,
@@ -78,29 +114,56 @@ footer a {
 }
 
 #breakpoint-indicator {
-	background: tomato;
+	position: fixed;
+	width: 100px;
+	bottom: 0;
+	right: 0;
+	
+	background: #003619;
 	padding: 0.5em;
 	text-align: center;
-	margin-bottom: 1em;
 	color: #eee;
+}
+
+#breakpoint-indicator p {
+	margin: 0;
 }
 
 #main-menu,
 footer {
-	background: #888;
+	background: #1c427c;
+}
+
+#main-menu {
+	border-top: 1px solid #c88b17;
+	border-bottom: 1px solid #c88b17;
 }
 
 footer {
+	border-top: 4px solid #c88b17;
+	border-bottom: 4px solid #c88b17;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
 	color: #fff;
 }
 
 .footer-column {
 	width: 33.33%;
  	float: left;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-column ul li {
+	list-style-type: none;
+}
+
+.footer-column a {
+	color: #fff;
 }
 
 a {
-	color: #777;
+	color: #ab1519;
 }
 
 @media (min-width:769px) {
